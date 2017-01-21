@@ -6,4 +6,5 @@ Note: This is designed for moble. I want to get the functionality down before th
 
 TODO: 
 [ ] Add option to store user address.
+
 [ ] Be able to load different countrys data. see srs/js/script.js
