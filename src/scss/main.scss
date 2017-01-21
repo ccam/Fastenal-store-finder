@@ -1,0 +1,70 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #00599c;
+  color: #fff;
+  height: 10vh;
+  width: 100vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  
+  img {
+    height: 10vh;
+  }
+
+  h1 {
+    text-align: right;
+    margin-left: 45vw;
+    margin-top: 9vh;
+    font-size: 1.5em;
+  }
+}
+
+h2 {
+  background-color: #00599c;
+  color: #fff;
+  padding: 2vw 0;
+  margin: 0;
+}
+
+.findStore {
+  margin-bottom: 2vh;
+}
+
+.fiveLetterForm {
+  margin-bottom: 2vh;
+}
+
+form {
+  legend {
+    margin: 0 auto;
+  }
+
+  input {
+    border: 0;
+    border-bottom: 1px solid #333;
+  }
+
+  .submitButton {
+    background-color: #00599c;
+    color: #fff;
+    padding: 1vh;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0;
+  }
+
+  input[type=submit], input[type=text] {
+    margin-top: 2vh;
+  }
+
+  .fiveLetterInput{
+    margin-bottom: 2vh;
+  }
+
+}
+

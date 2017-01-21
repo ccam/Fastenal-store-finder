@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fastenal Store Finder</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header>
+    <img src="css/img/fastenal-logo-bw.png" alt="logo">
+    
+  </header>
+
+  <h2 class="findStore">Find Store</h2>
+  <form action="" class="fiveLetterForm">
+    <legend>Search by 5 letter</legend>
+    <label for="store">5 Letter: </label>
+    <input type="text" maxlength="5" class="fiveLetterInput"><br>
+    <buton id="searchStore" class="submitButton">Submit</buton>
+  </form>
+
+  <div class="err"></div>
+
+  <h2>Google Directions</h2>
+  <form action="http://maps.google.com/maps" method="get" target="_blank">
+   <label for="saddr">Enter your location:</label>
+   <input type="text" name="saddr" value="76 9th Ave, New York, NY 10011" /><br>
+   <label for="daddr">Destination Location: </label>
+   <input type="text" name="daddr" id="dest" />
+   <input type="submit" value="Get directions" class="submitButton"/>
+   
+
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+   <script src="js/script.js"></script>
+</form>
+</body>
+</html>

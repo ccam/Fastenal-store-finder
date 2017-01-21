@@ -1,0 +1,1 @@
+$(function(){function e(){var e=$(".fiveLetterInput").val().toUpperCase();console.log(e);for(var t=0;t<o.length;t++){var a=o[t].Address,n=o[t].City,r=o[t].State;if(e==o[t].code){var s=a+", "+n+", "+r;console.log(s)}}var c=$("#dest");c.val(s)}var o,t=$("#searchStore");$.ajax({type:"GET",url:"js/usa.json",dateType:"JSON",success:function(e){o=e}}),t.on("click",function(){e()})});

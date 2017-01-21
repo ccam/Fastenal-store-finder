@@ -1,0 +1,122 @@
+[
+ {
+   "code": "BRCON",
+   "Branch Code 4": "CGBR",
+   "Address": "Avenida Riacho das Pedras 192",
+   "City": "Contagem",
+   "State": "99",
+   "Postal Code": 32241320,
+   "Country": "BRA",
+   "Phone": "553-133-9614",
+   "Fax": "",
+   "Email": "brcon@stores.fastenal.com"
+ },
+ {
+   "code": "BRGRA",
+   "Branch Code 4": "GRBR",
+   "Address": "Av. Brazil # 933",
+   "City": "Gravatai",
+   "State": "99",
+   "Postal Code": 94150,
+   "Country": "BRA",
+   "Phone": "",
+   "Fax": "",
+   "Email": "brgra@stores.fastenal.com"
+ },
+ {
+   "code": "BRSOR",
+   "Branch Code 4": "SOBR",
+   "Address": "Av. Quinze De Agosto, 5260",
+   "City": "Sorocaba",
+   "State": "99",
+   "Postal Code": 18085290,
+   "Country": "BRA",
+   "Phone": "551-532-3833",
+   "Fax": "",
+   "Email": "brsor@stores.fastenal.com"
+ },
+ {
+   "code": "BRSRC",
+   "Branch Code 4": "SPBR",
+   "Address": "Avenida Quinze De Agosto",
+   "City": "Sorocaba",
+   "State": "99",
+   "Postal Code": 18085290,
+   "Country": "BRA",
+   "Phone": "",
+   "Fax": "",
+   "Email": "brsrc@stores.fastenal.com"
+ },
+ {
+   "code": "CISAN",
+   "Branch Code 4": "SACI",
+   "Address": "Carretera General San Martin 8000",
+   "City": "Santiago",
+   "State": "99",
+   "Postal Code": null,
+   "Country": "CHL",
+   "Phone": "011-56225920124",
+   "Fax": "",
+   "Email": "cisan@stores.fastenal.com"
+ },
+ {
+   "code": "CLCAR",
+   "Branch Code 4": "CACL",
+   "Address": "Carrera 56 No 7-C 39 Km",
+   "City": "Cartagena",
+   "State": "99",
+   "Postal Code": null,
+   "Country": "COL",
+   "Phone": "575-657-0298",
+   "Fax": "575-657-0263",
+   "Email": "clcar@stores.fastenal.com"
+ },
+ {
+   "code": "CLBOG",
+   "Branch Code 4": "BOCL",
+   "Address": "Autopista Medellin KM 3.5 Siberia",
+   "City": "Mosquera",
+   "State": "99",
+   "Postal Code": null,
+   "Country": "COL",
+   "Phone": "011-5718415282",
+   "Fax": "571-893-7283",
+   "Email": "clbog@stores.fastenal.com"
+ },
+ {
+   "code": "DR001",
+   "Branch Code 4": "HADR",
+   "Address": "Las Americas Ind. Free Zone",
+   "City": "Santo Domingo",
+   "State": "DN",
+   "Postal Code": null,
+   "Country": "DOM",
+   "Phone": "809-549-1655",
+   "Fax": "809-549-2499",
+   "Email": "dr001@stores.fastenal.com"
+ },
+ {
+   "code": "PNDAV",
+   "Branch Code 4": "CHPN",
+   "Address": "Centro Industrial Coquito Park, Via",
+   "City": "David",
+   "State": "99",
+   "Postal Code": null,
+   "Country": "PAN",
+   "Phone": "011-5077307621",
+   "Fax": "011-5077307624",
+   "Email": "pndav@stores.fastenal.com"
+ },
+ {
+   "code": "PNPAN",
+   "Branch Code 4": "PCPN",
+   "Address": "Complejo de Galeras Industrial Ctyd",
+   "City": "Panama City",
+   "State": "99",
+   "Postal Code": null,
+   "Country": "PAN",
+   "Phone": "011-5072326584",
+   "Fax": "011-5072326559",
+   "Email": "pnpan@stores.fastenal.com"
+ }
+]
