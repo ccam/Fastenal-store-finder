@@ -4,7 +4,8 @@ This app takes the 5 letter branch code of any Fastenal Store and returns the ad
 
 Note: This is designed for moble. I want to get the functionality down before the designing for all platforms. 
 
-TODO: 
+TODO:
+
 [ ] Add option to store user address.
 
 [ ] Be able to load different countrys data. see srs/js/script.js
