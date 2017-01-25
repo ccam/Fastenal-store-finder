@@ -62,7 +62,7 @@ findAddress();
     if( 'geolocation' in navigator) {
       navigator.geolocation.getCurrentPosition(success);
     } else {
-      $('.err').append('<span>Must enable location. Refresh page to try again.</span>');
+      $('.err').append('<span>You are using an outdated browswer try: <a href="https://www.google.com/chrome/browser/desktop/index.html">Chrome</a></span>');
     }
   }
 
