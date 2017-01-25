@@ -8,21 +8,19 @@ header {
   color: #fff;
   height: 10vh;
   width: 100vw;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  display: flex; }
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
   header img {
     height: 10vh; }
-  header h1 {
-    text-align: right;
-    margin-left: 45vw;
-    margin-top: 9vh;
-    font-size: 1.5em; }
+  header .err {
+    background-color: red;
+    color: purple; }
 
 h2 {
   background-color: #00599c;
   color: #fff;
-  padding: 2vw 0;
-  margin: 0; }
+  padding: 6vw 0 2vw 0;
+  margin: 0;
+  font-size: 1.25em; }
 
 .findStore {
   margin-bottom: 2vh; }
@@ -30,23 +28,21 @@ h2 {
 .fiveLetterForm {
   margin-bottom: 2vh; }
 
-form legend {
-  margin: 0 auto; }
-
-form input {
-  border: 0;
-  border-bottom: 1px solid #333; }
-
-form .submitButton {
-  background-color: #00599c;
-  color: #fff;
-  padding: 1vh;
-  border-radius: 5px;
-  cursor: pointer;
-  border: 0; }
-
-form input[type=submit], form input[type=text] {
-  margin-top: 2vh; }
-
-form .fiveLetterInput {
-  margin-bottom: 2vh; }
+form {
+  font-size: 1.25em; }
+  form legend {
+    margin: 0 auto; }
+  form input {
+    border: 0;
+    border-bottom: 1px solid #333; }
+  form .submitButton {
+    background-color: #00599c;
+    color: #fff;
+    padding: 1vh;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0; }
+  form input[type=submit], form input[type=text] {
+    margin-top: 2vh; }
+  form .fiveLetterInput {
+    margin-bottom: 2vh; }

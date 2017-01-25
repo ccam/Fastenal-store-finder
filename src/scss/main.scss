@@ -10,25 +10,22 @@ header {
   height: 10vh;
   width: 100vw;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  display: flex;
   
   img {
     height: 10vh;
   }
-
-  h1 {
-    text-align: right;
-    margin-left: 45vw;
-    margin-top: 9vh;
-    font-size: 1.5em;
+  .err {
+    background-color: red;
+    color: purple;
   }
 }
 
 h2 {
   background-color: #00599c;
   color: #fff;
-  padding: 2vw 0;
+  padding: 6vw 0 2vw 0;
   margin: 0;
+  font-size: 1.25em
 }
 
 .findStore {
@@ -40,6 +37,7 @@ h2 {
 }
 
 form {
+  font-size: 1.25em;
   legend {
     margin: 0 auto;
   }
@@ -48,6 +46,8 @@ form {
     border: 0;
     border-bottom: 1px solid #333;
   }
+
+  
 
   .submitButton {
     background-color: #00599c;

@@ -48,4 +48,24 @@ getData();
 storeSearch.on('click', function() {
 findAddress();
   }); 
+
+
+  function getLocation() {
+    function success(pos) {
+      var lat = pos.coords.latitude,
+          long = pos.coords.longitude;
+          console.log(lat, long)
+      $('#userLocation').val(lat + ',' + long);
+
+    };
+
+    if( 'geolocation' in navigator) {
+      navigator.geolocation.getCurrentPosition(success);
+    } else {
+      $('.err').append('<span>Must enable location. Refresh page to try again.</span>');
+    }
+  }
+
+
+  getLocation();
 });
