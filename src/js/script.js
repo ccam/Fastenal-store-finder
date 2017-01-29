@@ -27,16 +27,17 @@ function getData() {
 };//end getData()
 
 function findAddress() {
-  var fiveLetter = $('.fiveLetterInput').val().toUpperCase(); 
+  var fiveLetter = $('.fiveLetterInput').val().toUpperCase();
   for (var i = 0; i < theData.length; i++) {
   var addr = theData[i].Address,
       city = theData[i].City,
       state = theData[i].State;
-
     if (fiveLetter == theData[i].code) {
       var final = addr + ', ' + city + ', ' + state;
     };
   };
+
+  
   var dest = $('#dest');
   dest.val(final);
 };//end findAddress
@@ -55,9 +56,10 @@ function findAddress() {
     };
   };
 
+  getData();
+  getLocation();
   storeSearch.on('click', function() {
     findAddress();
   }); 
-  getData();
-  getLocation();
+
 });
