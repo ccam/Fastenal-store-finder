@@ -15,6 +15,7 @@ function getData() {
     $.getJSON('js/' +region+ '.json', function(data){
       theData = data;
     });   //end .getJSON()
+    console.log(theData);
   }//end jsonCall()
   jsonCall(); //makes json call as soon as getdata() is called
 
