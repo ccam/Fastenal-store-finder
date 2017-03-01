@@ -9,3 +9,5 @@ TODO:
 [ ] Add Distrobution Centers. (finish editing json file)
 [ ] Show contact info Phone, fax, and address
 [ ] When enter key is hit page refreshes 
+[ ] change options to usa and world. 
+[ ] fix region selection. 

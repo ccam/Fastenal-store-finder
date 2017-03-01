@@ -35,14 +35,15 @@ form {
   form input {
     border: 0;
     border-bottom: 1px solid #333; }
+  form #fiveLetterInput {
+    margin-bottom: 5vh; }
   form .submitButton {
     background-color: #00599c;
     color: #fff;
     padding: 1vh;
     border-radius: 5px;
     cursor: pointer;
-    border: 0; }
+    border: 0;
+    margin-bottom: 3vh; }
   form input[type=submit], form input[type=text] {
     margin-top: 2vh; }
-  form .fiveLetterInput {
-    margin-bottom: 2vh; }

@@ -47,7 +47,9 @@ form {
     border-bottom: 1px solid #333;
   }
 
-  
+  #fiveLetterInput{
+    margin-bottom: 5vh;
+  }
 
   .submitButton {
     background-color: #00599c;
@@ -56,15 +58,11 @@ form {
     border-radius: 5px;
     cursor: pointer;
     border: 0;
+    margin-bottom: 3vh;
   }
 
   input[type=submit], input[type=text] {
     margin-top: 2vh;
   }
-
-  .fiveLetterInput{
-    margin-bottom: 2vh;
-  }
-
 }
 

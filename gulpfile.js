@@ -2,7 +2,8 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     cleanCSS = require('gulp-clean-css'),
-    uglify = require('gulp-uglify');
+    uglify = require('gulp-uglify'),
+    server = require('gulp-server-livereload');
 
 gulp.task('sass', function() {
   return gulp.src('./src/scss/*.scss')
@@ -26,6 +27,15 @@ gulp.task('min-js', function () {
   .pipe(gulp.dest('docs/js'));
 });
 
-gulp.task('main', ['sass:watch'])
+gulp.task('server', function() {
+  gulp.src('src')
+  .pipe(server ({
+    livereload: true,
+    open: true,
+    port: 1337
+  }));
+});
+
+gulp.task('main', ['sass:watch', 'server'])
 
 gulp.task('default', ['main']);

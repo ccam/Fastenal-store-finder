@@ -25551,5 +25551,101 @@
    "Phone": "307-464-0065",
    "Fax": "307-464-0067",
    "Email": "wywrg@stores.fastenal.com"
+ },
+ {
+   "code": "GUTAM",
+   "Branch Code 4": "HRGU",
+   "Address": "215 Rojas Street, Unit 125",
+   "City": "Tamuning",
+   "State": "GU",
+   "Postal Code": 96913,
+   "Country": "USA",
+   "Phone": "671-648-1406",
+   "Fax": "671-648-1408",
+   "Email": "gutam@stores.fastenal.com"
+ },
+ {
+   "code": "PRARE",
+   "Branch Code 4": "ARPR",
+   "Address": "Carretera #2 Barrio Santana",
+   "City": "Arecibo",
+   "State": "PR",
+   "Postal Code": 612,
+   "Country": "USA",
+   "Phone": "787-816-1938",
+   "Fax": "787-816-1934",
+   "Email": "prare@stores.fastenal.com"
+ },
+ {
+   "code": "PRCAG",
+   "Branch Code 4": "CAPR",
+   "Address": "StateRD #1 Km27.4 PMB #510 Box 4960",
+   "City": "Caguas",
+   "State": "PR",
+   "Postal Code": 726,
+   "Country": "USA",
+   "Phone": "787-745-3444",
+   "Fax": "787-745-3443",
+   "Email": "prcag@stores.fastenal.com"
+ },
+ {
+   "code": "PRGUA",
+   "Branch Code 4": "GUPR",
+   "Address": "Centro de Distribucisn Lote A-1 Bes",
+   "City": "Carolina",
+   "State": "PR",
+   "Postal Code": 979,
+   "Country": "USA",
+   "Phone": "787-782-2628",
+   "Fax": "787-782-7815",
+   "Email": "prgua@stores.fastenal.com"
+ },
+ {
+   "code": "PRGU1",
+   "Branch Code 4": "GYPR",
+   "Address": "Carretera #3 KM. 140.5",
+   "City": "Guayama",
+   "State": "PR",
+   "Postal Code": 784,
+   "Country": "USA",
+   "Phone": "787-864-2547",
+   "Fax": "787-866-8128",
+   "Email": "prgu1@stores.fastenal.com"
+ },
+ {
+   "code": "PRMAY",
+   "Branch Code 4": "MZPR",
+   "Address": "#19 Ave. Hiram Cabassa Suite 103",
+   "City": "Mayaguez",
+   "State": "PR",
+   "Postal Code": 682,
+   "Country": "USA",
+   "Phone": "787-265-7355",
+   "Fax": "787-265-7485",
+   "Email": "prmay@stores.fastenal.com"
+ },
+ {
+   "code": "PRMER",
+   "Branch Code 4": "MEPR",
+   "Address": "1678LosCaobosIndPark Ste2",
+   "City": "Ponce",
+   "State": "PR",
+   "Postal Code": 716,
+   "Country": "USA",
+   "Phone": "787-841-2131",
+   "Fax": "787-841-2111",
+   "Email": "prmer@stores.fastenal.com"
+ },
+ {
+   "code": "PRVEG",
+   "Branch Code 4": "VEPR",
+   "Address": "KM 35.5 Rd #2",
+   "City": "Vega Baja",
+   "State": "PR",
+   "Postal Code": 694,
+   "Country": "USA",
+   "Phone": "787-270-0325",
+   "Fax": "787-270-0350",
+   "Email": "prveg@stores.fastenal.com"
  }
 ]
