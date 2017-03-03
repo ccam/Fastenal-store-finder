@@ -5,9 +5,5 @@ This app takes the 5 letter branch code of any Fastenal Store and returns the ad
 Note: This is designed for moble. I want to get the functionality down before the designing for all platforms. 
 
 TODO: 
-
-[ ] Add Distrobution Centers. (finish editing json file)
 [ ] Show contact info Phone, fax, and address
-[ ] When enter key is hit page refreshes 
-[ ] change options to usa and world. 
-[ ] fix region selection. 
+[ ] Add error handling

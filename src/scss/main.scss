@@ -1,7 +1,10 @@
+//Defaults 
+
 body {
   margin: 0 auto;
   padding: 0;
   text-align: center;
+  font-size: 1.25em;
 }
 
 header {
@@ -10,34 +13,27 @@ header {
   height: 10vh;
   width: 100vw;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  
+  padding-bottom: 3vh;
   img {
     height: 10vh;
   }
   .err {
     background-color: red;
     color: purple;
+    //display: none;
+    visibility: hidden;
   }
 }
 
 h2 {
   background-color: #00599c;
   color: #fff;
-  padding: 6vw 0 2vw 0;
-  margin: 0;
-  font-size: 1.25em
-}
-
-.findStore {
-  margin-bottom: 2vh;
-}
-
-.fiveLetterForm {
-  margin-bottom: 2vh;
+  padding: 2vh 0 2vh 0;
+  margin: 0 auto;
 }
 
 form {
-  font-size: 1.25em;
+  
   legend {
     margin: 0 auto;
   }
@@ -45,24 +41,36 @@ form {
   input {
     border: 0;
     border-bottom: 1px solid #333;
-  }
-
-  #fiveLetterInput{
-    margin-bottom: 5vh;
-  }
-
-  .submitButton {
-    background-color: #00599c;
-    color: #fff;
-    padding: 1vh;
-    border-radius: 5px;
-    cursor: pointer;
-    border: 0;
-    margin-bottom: 3vh;
-  }
-
-  input[type=submit], input[type=text] {
     margin-top: 2vh;
   }
 }
 
+//Classes
+
+.fiveLetterInput {
+  margin-bottom: 2vh;
+  width: 3em;
+}
+
+#userLocation, #dest {
+  width: 80vw;
+}
+
+.submitButton {
+  background-color: #00599c;
+  color: #fff;
+  padding: 1vh;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0;
+  margin-bottom: 2vh;
+}
+
+.findStore {
+  margin-bottom: 2vh;
+}
+
+.details {
+  text-align: left;
+  margin-left: 25vw;
+}
