@@ -7,24 +7,12 @@ $(function() {
 var storeSearch = $('#searchStore');
 var theData; // is assigned the JSON data
 
-function getData() {
-  var regionInput = $('select#region');
-  
-  function jsonCall() {
-    $.getJSON('js/all.json', function(data){
-      theData = data;
-    });   //end .getJSON()
-    
-  }//end jsonCall()
-  jsonCall(); //makes json call as soon as getdata() is called
-
-  /*regionInput.on('change',function() {
-   $('select option:selected').each(function() {
-    region = $(this).val();
-    });
-    jsonCall(); // makes json call once user changes region
-  });*/
-};//end getData()
+function jsonCall() {
+  $.getJSON('js/all.json', function(data){
+    theData = data;
+  });   //end .getJSON()
+}//end jsonCall()
+//jsonCall(); //makes json call as soon as getdata() is called
 
 function findAddress() {
   var fiveLetter = $('.fiveLetterInput').val().toUpperCase();
@@ -38,10 +26,14 @@ function findAddress() {
 
       if (fiveLetter == theData[i].code) { //if the five letter = a code in json file display info
         $('#dest').val(addr + ', ' + city + ', ' + state); 
-        $('#addr').append(addr + ', ' + city + ', ' + state);
-        $('#phone').append(phone);
-        $('#fax').append(fax);
-        $('#email').append(email);
+        $('#addr').text(addr + ', ' + city + ', ' + state);
+        $('#phone').text(phone);
+        $('#fax').text(fax);
+        $('#email').text(email);
+        var h = 'jello';
+        $('.waze').replaceWith(
+          "<a href='waze://?q="+addr+","+city+","+state+"' class='submitButton'> Waze</a>"
+          );
         return; //to jump out of for loop/ if statement
       }
 /*FIX this
@@ -67,8 +59,9 @@ function findAddress() {
       $('.err').append('<span>You are using an outdated browswer try: <a href="https://www.google.com/chrome/browser/desktop/index.html">Chrome</a></span>');
     };
   };
+  
 
-  getData();
+ jsonCall();
   getLocation();
   storeSearch.on('click', function() {
     findAddress();

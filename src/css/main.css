@@ -7,16 +7,10 @@ body {
 header {
   background-color: #00599c;
   color: #fff;
-  height: 10vh;
-  width: 100vw;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding-bottom: 3vh; }
   header img {
     height: 10vh; }
-  header .err {
-    background-color: red;
-    color: purple;
-    visibility: hidden; }
 
 h2 {
   background-color: #00599c;
@@ -31,6 +25,15 @@ form input {
   border: 0;
   border-bottom: 1px solid #333;
   margin-top: 2vh; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+.err {
+  background-color: red;
+  color: purple;
+  visibility: hidden; }
 
 .fiveLetterInput {
   margin-bottom: 2vh;
@@ -53,4 +56,7 @@ form input {
 
 .details {
   text-align: left;
-  margin-left: 25vw; }
+  margin-left: 2vw; }
+
+.big {
+  font-size: 1.25em; }

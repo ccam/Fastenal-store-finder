@@ -9,6 +9,7 @@
 // --submit find matching store
 // --add address to google form 
 var theData; 
+var storeSearch = $('#searchStore');
 function getLocation() {
   function success(pos) {
     var lat = pos.coords.latitude,
@@ -29,7 +30,7 @@ function getData() {
   xhr.open('GET', 'js/usa.json')
   xhr.onload = function() {
     var data = xhr.responseText;
-    console.log(data;
+    //console.log(data);
   }
 
   xhr.send();
@@ -61,5 +62,7 @@ function findAddress() {
 
 getData();
 getLocation();
-//var e = document.getElementById('storeSearch');
-//e.onclick= findAddress();
+
+storeSearch.on('click', function() {
+  findAddress();
+  }); 

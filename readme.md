@@ -5,5 +5,11 @@ This app takes the 5 letter branch code of any Fastenal Store and returns the ad
 Note: This is designed for moble. I want to get the functionality down before the designing for all platforms. 
 
 TODO: 
-[ ] Show contact info Phone, fax, and address
 [ ] Add error handling
+[ ] redesign the findAddress function();
+
+test.js is bae
+loop thru file??
+
+
+waze: 	waze://?q=<address search term>

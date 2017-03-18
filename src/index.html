@@ -12,38 +12,41 @@
 <body>
   <header>
     <img src="css/img/fastenal-logo-bw.png" alt="logo"><br>
-    <span class="err"> That is not a 5 letter store code</span>
+    
   </header>
 
   <div class="findStore">
     <h2>Find Store</h2>
-    <form action="" class="fiveLetterForm">
+    <span class="err"> That is not a 5 letter store code</span>
+    <form class="fiveLetterForm">
       <legend>Search by 5 letter</legend>
       <label for="store">5 Letter: </label>
       <input type="text" maxlength="5" value='nywod' class="fiveLetterInput"><br>
       <buton id="searchStore" class="submitButton">Submit</buton>
-      <div id="rando"></div>
     </form>
   </div>
 
   <div class="getDirections">
-    <h2>Google Directions</h2>
+    <h2>Directions</h2>
     <form action="https://maps.google.com/maps" method="get" target="_blank">
-    <label for="saddr">Your location:</label><br>
-    <input type="text" name="saddr" id="userLocation" /><br>
-    <label for="daddr">Destination: </label><br>
-    <input type="text" name="daddr" id="dest" /><br>
-    <input type="submit" value="Get directions" class="submitButton"/>
+      <label for="saddr">Your location:</label><br>
+      <input type="text" name="saddr" id="userLocation" /><br>
+      <label for="daddr">Destination: </label><br>
+      <input type="text" name="daddr" id="dest" /><br>
+      <input type="submit" value="Use Google Maps" class="submitButton"/>
+      <div class="waze submitButton">Waze</div>
+    </form>
     
-   </div>
+  </div>
+    
 
    <div class="info">
      <h2>Information</h2>
      <div class="details">
-      Address: <br> <span id="addr"></span><br><br>
-      Phone: <a href="tel:" id="phone"></a><br><br>
-      Fax: <a href="tel:" id="fax"></a><br><br>
-      Email: <a href="mailto:" id="email"></a>
+      <span class="big">Address:</span> <br> <span id="addr"></span><br><br>
+      <span class="big">Phone:</span> <span id="phone"></span><br><br>
+      <span class="big"> Fax:</span> <span id="fax"></span></a><br><br>
+      <span class="big"> Email:</span> <span id="email"></span>
      </div>
    </div>
 
@@ -52,6 +55,5 @@
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
    <script src="js/test.js"></script>
-</form>
 </body>
 </html>
