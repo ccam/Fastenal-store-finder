@@ -7,40 +7,36 @@ $(function() {
 var storeSearch = $('#searchStore');
 var theData; // is assigned the JSON data
 
-function getData() {
-  var regionInput = $('select#region');
-  var region = 'usa';
-  
-  function jsonCall() {
-    $.getJSON('js/' +region+ '.json', function(data){
-      theData = data;
-    });   //end .getJSON()
-    console.log(theData);
-  }//end jsonCall()
-  jsonCall(); //makes json call as soon as getdata() is called
-
-  regionInput.on('change',function() {
-   $('select option:selected').each(function() {
-    region = $(this).val();
-    });
-    jsonCall(); // makes json call once user changes region
-  });
-};//end getData()
+function jsonCall() {
+  $.getJSON('js/all.json', function(data){
+    theData = data;
+  });   //end .getJSON()
+}//end jsonCall()
 
 function findAddress() {
   var fiveLetter = $('.fiveLetterInput').val().toUpperCase();
-  for (var i = 0; i < theData.length; i++) {
-  var addr = theData[i].Address,
-      city = theData[i].City,
-      state = theData[i].State;
-    if (fiveLetter == theData[i].code) {
-      var final = addr + ', ' + city + ', ' + state;
-    };
-  };
 
-  
-  var dest = $('#dest');
-  dest.val(final);
+ $.each(theData, function(i,v) {
+   
+    var addr = v.Address,
+        city = v.City,
+        state = v.State,
+        phone = v.Phone,
+        fax = v.Fax,
+        email = v.Email;
+
+    if (v.code == fiveLetter) {//if the five letter = a code in json file display info
+      $('#dest').val(addr + ', ' + city + ', ' + state); 
+      $('#addr').text(addr + ', ' + city + ', ' + state);
+      $('#phone').text(phone);
+      $('#fax').text(fax);
+      $('#email').text(email);
+      var h = 'jello';
+      $('.waze').replaceWith(
+          "<a href='waze://?q="+addr+","+city+","+state+"' class='submitButton'> Waze</a>"
+        );
+    } //end if  
+  });//end of $.each();
 };//end findAddress
 
   function getLocation() {
@@ -56,11 +52,11 @@ function findAddress() {
       $('.err').append('<span>You are using an outdated browswer try: <a href="https://www.google.com/chrome/browser/desktop/index.html">Chrome</a></span>');
     };
   };
+  
 
-  getData();
-  getLocation();
-  storeSearch.on('click', function() {
-    findAddress();
+ jsonCall();
+ getLocation();
+ storeSearch.on('click', function() {
+   findAddress()
   }); 
-
 });

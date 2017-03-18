@@ -12,38 +12,31 @@ function jsonCall() {
     theData = data;
   });   //end .getJSON()
 }//end jsonCall()
-//jsonCall(); //makes json call as soon as getdata() is called
 
 function findAddress() {
   var fiveLetter = $('.fiveLetterInput').val().toUpperCase();
-  for (var i = 0; i < theData.length; i++) {
-  var addr = theData[i].Address,
-      city = theData[i].City,
-      state = theData[i].State,
-      phone = theData[i].Phone,
-      fax = theData[i].Fax,
-      email = theData[i].Email;
 
-      if (fiveLetter == theData[i].code) { //if the five letter = a code in json file display info
-        $('#dest').val(addr + ', ' + city + ', ' + state); 
-        $('#addr').text(addr + ', ' + city + ', ' + state);
-        $('#phone').text(phone);
-        $('#fax').text(fax);
-        $('#email').text(email);
-        var h = 'jello';
-        $('.waze').replaceWith(
+ $.each(theData, function(i,v) {
+   
+    var addr = v.Address,
+        city = v.City,
+        state = v.State,
+        phone = v.Phone,
+        fax = v.Fax,
+        email = v.Email;
+
+    if (v.code == fiveLetter) {//if the five letter = a code in json file display info
+      $('#dest').val(addr + ', ' + city + ', ' + state); 
+      $('#addr').text(addr + ', ' + city + ', ' + state);
+      $('#phone').text(phone);
+      $('#fax').text(fax);
+      $('#email').text(email);
+      var h = 'jello';
+      $('.waze').replaceWith(
           "<a href='waze://?q="+addr+","+city+","+state+"' class='submitButton'> Waze</a>"
-          );
-        return; //to jump out of for loop/ if statement
-      }
-/*FIX this
-      } else if (fiveLetter !== theData[i].code) {
-        console.log('err');
-        return;
-      }
-      */
-  };//end for loop
-  
+        );
+    } //end if  
+  });//end of $.each();
 };//end findAddress
 
   function getLocation() {
@@ -62,9 +55,8 @@ function findAddress() {
   
 
  jsonCall();
-  getLocation();
-  storeSearch.on('click', function() {
-    findAddress();
+ //getLocation();
+ storeSearch.on('click', function() {
+   findAddress()
   }); 
-
 });

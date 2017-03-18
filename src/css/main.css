@@ -33,7 +33,7 @@ a {
 .err {
   background-color: red;
   color: purple;
-  visibility: hidden; }
+  display: none; }
 
 .fiveLetterInput {
   margin-bottom: 2vh;

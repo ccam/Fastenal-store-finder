@@ -10,6 +10,3 @@ TODO:
 
 test.js is bae
 loop thru file??
-
-
-waze: 	waze://?q=<address search term>

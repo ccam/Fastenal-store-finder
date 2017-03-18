@@ -12,44 +12,46 @@
 <body>
   <header>
     <img src="css/img/fastenal-logo-bw.png" alt="logo"><br>
-    <span class="err"></span>
   </header>
 
-  <h2 class="findStore">Find Store</h2>
-  <form action="" class="fiveLetterForm">
-    <!--<label for="region">Select Your Region:</label>
-    <br>
-    <select id="region">
-      <option value="usa">USA</option>
-      <option value="usTerritories">US Territories</option>
-      <option value="canada">Canada</option>
-      <option value="mexico">Mexico</option>
-      <option value="southAmerica">South America</option>
-      <option value="europe">Europe</option>
-      <option value="africa">Africa</option>
-      <option value="asia">Asia</option>
-    </select>
-    -->
+  <div class="findStore">
+    <h2>Find Store</h2>
+    <span class="err"> That is not a 5 letter store code</span>
+    <form class="fiveLetterForm">
+      <legend>Search by 5 letter</legend>
+      <label for="store">5 Letter: </label>
+      <input type="text" maxlength="5" class="fiveLetterInput"><br>
+      <buton id="searchStore" class="submitButton">Submit</buton>
+    </form>
+  </div>
 
-    <legend>Search by 5 letter</legend>
-    <label for="store">5 Letter: </label>
-    <input type="text" maxlength="5" class="fiveLetterInput"><br>
-    <buton id="searchStore" class="submitButton">Submit</buton>
-  </form>
+  <div class="getDirections">
+    <h2>Directions</h2>
+    <form action="https://maps.google.com/maps" method="get" target="_blank">
+      <label for="saddr">Your location:</label><br>
+      <input type="text" name="saddr" id="userLocation" /><br>
+      <label for="daddr">Destination: </label><br>
+      <input type="text" name="daddr" id="dest" /><br>
+      <input type="submit" value="Use Google Maps" class="submitButton"/>
+      <a href="#" class="waze submitButton">Waze</a>
+    </form>
+  </div>
+    
 
-  <h2>Google Directions</h2>
-  <form action="https://maps.google.com/maps" method="get" target="_blank">
-   <label for="saddr">Your location:</label><br>
-   <input type="text" name="saddr" id="userLocation" /><br>
-   <label for="daddr">Destination: </label><br>
-   <input type="text" name="daddr" id="dest" /><br>
-   <input type="submit" value="Get directions" class="submitButton"/>
+   <div class="info">
+     <h2>Information</h2>
+     <div class="details">
+      <span class="big">Address:</span> <br> <span id="addr"></span><br><br>
+      <span class="big">Phone:</span> <span id="phone"></span><br><br>
+      <span class="big"> Fax:</span> <span id="fax"></span></a><br><br>
+      <span class="big"> Email:</span> <span id="email"></span>
+     </div>
+   </div>
 
 <script
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
    <script src="js/script.js"></script>
-</form>
 </body>
 </html>
