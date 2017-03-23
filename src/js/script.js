@@ -55,8 +55,9 @@ function findAddress() {
   
 
  jsonCall();
- getLocation();
+
  storeSearch.on('click', function() {
    findAddress()
   }); 
+ getLocation();
 });
