@@ -1,48 +1,21 @@
-body {
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
-  font-size: 1.25em; }
-
-header {
-  background-color: #00599c;
-  color: #fff;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding-bottom: 3vh; }
-  header img {
-    height: 10vh; }
-
-h2 {
-  background-color: #00599c;
-  color: #fff;
-  padding: 2vh 0 2vh 0;
-  margin: 0 auto; }
-
-form legend {
-  margin: 0 auto; }
-
-form input {
-  border: 0;
-  border-bottom: 1px solid #333;
-  margin-top: 2vh; }
-
 a {
   color: inherit;
   text-decoration: none; }
 
-.err {
-  background-color: red;
-  color: purple;
-  display: none; }
+header {
+  height: 87px; }
+  header .logo {
+    width: 100vw;
+    padding-bottom: 0;
+    margin-bottom: 0; }
 
-.fiveLetterInput {
-  margin-bottom: 2vh;
-  width: 3em; }
+h2 {
+  color: #fff;
+  background-color: #00599c;
+  padding: 1vh 0;
+  text-align: center; }
 
-#userLocation, #dest {
-  width: 80vw; }
-
-.submitButton {
+button, .submitButton {
   background-color: #00599c;
   color: #fff;
   padding: 1vh;
@@ -51,12 +24,33 @@ a {
   border: 0;
   margin-bottom: 2vh; }
 
-.findStore {
-  margin-bottom: 2vh; }
+.card {
+  width: 80vw;
+  margin: 0 auto;
+  box-shadow: 0px 2px 5px #000; }
 
-.details {
+.findStore .topHeading {
+  padding-top: 5vh;
+  margin-top: 0; }
+
+.findStore .searchTypeButtons {
+  text-align: center; }
+
+.findStore legend {
+  width: 100vw;
+  background-color: #aaa;
+  color: #000;
   text-align: left;
-  margin-left: 2vw; }
+  padding-left: 2vw;
+  padding: 1vh 0 0 2vw; }
 
-.big {
-  font-size: 1.25em; }
+.findStore .five-letter {
+  text-align: center; }
+  .findStore .five-letter input {
+    margin-bottom: 1vh; }
+
+.findStore .state {
+  display: none; }
+
+.findStore .city-state {
+  display: none; }

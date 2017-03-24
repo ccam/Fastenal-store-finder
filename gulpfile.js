@@ -1,18 +1,25 @@
-'use strict';
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     cleanCSS = require('gulp-clean-css'),
     uglify = require('gulp-uglify'),
-    server = require('gulp-server-livereload');
+    server = require('gulp-server-livereload'),
+    browserSync = require('browser-sync').create();
 
-gulp.task('sass', function() {
-  return gulp.src('./src/scss/*.scss')
-        .pipe(sass.sync().on('error', sass.logError))
-        .pipe(gulp.dest('./src/css'))
+
+gulp.task('serve', ['sass'], function() {
+  browserSync.init({
+    server: './src'
+  });
+
+  gulp.watch('./src/scss/*.scss', ['sass']);
+  gulp.watch('./src/*.html').on('change', browserSync.reload);
 });
 
-gulp.task('sass:watch', function () {
-  gulp.watch('./src/scss/*.scss', ['sass']);
+gulp.task('sass', function() {
+  return gulp.src('./src/scss/main.scss')
+  .pipe(sass.sync().on('error', sass.logError))
+  .pipe(gulp.dest('./src/css'))
+  .pipe(browserSync.stream());
 });
 
 gulp.task('minify-css', function () {
@@ -36,6 +43,6 @@ gulp.task('server', function() {
   }));
 });
 
-gulp.task('main', ['sass:watch', 'server'])
+gulp.task('main', ['serve'])
 
 gulp.task('default', ['main']);

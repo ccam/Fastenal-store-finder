@@ -5,8 +5,7 @@ This app takes the 5 letter branch code of any Fastenal Store and returns the ad
 Note: This is designed for moble. I want to get the functionality down before the designing for all platforms. 
 
 TODO: 
-[ ] Add error handling
-[ ] redesign the findAddress function();
-
-test.js is bae
-loop thru file??
+[ ] Spend more time on design.
+[ ] Add "Find by city" functionality
+[ ] Add "Find by City and State functionality
+[ ] package with PhoneGap???

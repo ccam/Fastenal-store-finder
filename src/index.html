@@ -11,18 +11,47 @@
 </head>
 <body>
   <header>
-    <img src="css/img/fastenal-logo-bw.png" alt="logo"><br>
+    <img src="css/img/fastenal-logo-bw.png" alt="logo" class="logo">
   </header>
 
   <div class="findStore">
-    <h2>Find Store</h2>
-    <span class="err"> That is not a 5 letter store code</span>
-    <form class="fiveLetterForm">
-      <legend>Search by 5 letter</legend>
-      <label for="store">5 Letter: </label>
-      <input type="text" maxlength="5" value='nywod' class="fiveLetterInput"><br>
-      <buton id="searchStore" class="submitButton">Submit</buton>
-    </form>
+    <h2 class="topHeading">Find Store</h2>
+    
+    <div class="searchTypeButtons">
+      <button class="fiveLtrBtn">5 Letter</button>
+      <button class="StateBtn">State</button>
+      <button class="cityState">City and State</button>
+    </div>
+
+    <div class="five-letter card">
+      <form class="fiveLetterForm">
+        <legend>Search by 5 letter</legend>
+        <!--<span class="err"> That is not a 5 letter store code</span><br>-->
+        <label for="store">5 Letter: </label>
+        <input type="text" maxlength="5" value='nywod' class="fiveLetterInput"><br>
+        <button id="searchStore" class="submitButton">Submit</button>
+      </form>
+    </div>
+
+    <div class="state card">
+      <form class="stateForm">
+        <legend>Search by State (will show all stores in state)</legend>
+        <label for="state">State:</label>
+        <input type="text" maxlength="2" class="stateInput"><br>
+        <button id="searchState" class="submitButton">Submit</button>
+      </form>
+    </div>
+
+    <div class="city-state card">
+      <form class="cityStateForm">
+        <legend>Search by city and state (will show all stores in state)</legend>
+        <label for="city">City:</label></br>
+        <input type="text" class="cityInput"></br>
+        <label for="state">State:</label>
+        <input type="text" maxlength="2" class="stateInput"><br>
+        <button id="searchState" class="submitButton">Submit</button>
+      </form>
+    </div>
   </div>
 
   <div class="getDirections">
@@ -52,6 +81,6 @@
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
-   <script src="js/script.js"></script>
+   <script src="js/test.js"></script>
 </body>
 </html>
