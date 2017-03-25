@@ -28,9 +28,9 @@ function findAddress() {
     if (v.code == fiveLetter) {//if the five letter = a code in json file display info
       $('#dest').val(addr + ', ' + city + ', ' + state); 
       $('#addr').text(addr + ', ' + city + ', ' + state);
-      $('#phone').text(phone);
+      $('#phone').replaceWith("<a href='tel:"+phone+"'>"+phone+"</a>");
       $('#fax').text(fax);
-      $('#email').text(email);
+      $('#email').replaceWith("<a href='mailto:"+email+"'>"+email+"</a>");
       var h = 'jello';
       $('.waze').replaceWith(
           "<a href='waze://?q="+addr+","+city+","+state+"' class='submitButton'> Waze</a>"
@@ -55,8 +55,9 @@ function findAddress() {
   
 
  jsonCall();
+ 
  storeSearch.on('click', function() {
-   findAddress()
+   findAddress();
   });
-  getLocation();
+ getLocation(); 
 });

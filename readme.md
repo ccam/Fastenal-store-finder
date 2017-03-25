@@ -4,6 +4,8 @@ This app takes the 5 letter branch code of any Fastenal Store and returns the ad
 
 Note: This is designed for moble. I want to get the functionality down before the designing for all platforms. 
 
+It's pretty clear by now that I need to learn more React and remake this in React. 
+
 TODO: 
 [ ] Spend more time on design.
 [ ] Add "Find by city" functionality

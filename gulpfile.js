@@ -8,7 +8,12 @@ var gulp = require('gulp'),
 
 gulp.task('serve', ['sass'], function() {
   browserSync.init({
-    server: './src'
+    server: './src',
+    ghostMode: {
+      clicks: true,
+      forms: true,
+      scroll: true
+    }
   });
 
   gulp.watch('./src/scss/*.scss', ['sass']);
@@ -22,6 +27,10 @@ gulp.task('sass', function() {
   .pipe(browserSync.stream());
 });
 
+gulp.task('sass:watch', function () {
+  gulp.watch('./src/css/*.scss', ['sass']);
+});
+
 gulp.task('minify-css', function () {
   return gulp.src('src/css/main.css')
   .pipe(cleanCSS({compatibility: 'ie8'}))
@@ -33,7 +42,7 @@ gulp.task('min-js', function () {
   .pipe(uglify())
   .pipe(gulp.dest('docs/js'));
 });
-
+/*
 gulp.task('server', function() {
   gulp.src('src')
   .pipe(server ({
@@ -42,6 +51,7 @@ gulp.task('server', function() {
     port: 1337
   }));
 });
+*/
 
 gulp.task('main', ['serve'])
 

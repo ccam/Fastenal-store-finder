@@ -3,9 +3,10 @@ a {
   text-decoration: none; }
 
 header {
-  height: 87px; }
+  height: 87px;
+  background-color: #00599c; }
   header .logo {
-    width: 100vw;
+    height: 13vh;
     padding-bottom: 0;
     margin-bottom: 0; }
 
@@ -13,13 +14,14 @@ h2 {
   color: #fff;
   background-color: #00599c;
   padding: 1vh 0;
-  text-align: center; }
+  text-align: center;
+  box-shadow: 0px 2px 5px #000; }
 
 button, .submitButton {
   background-color: #00599c;
   color: #fff;
   padding: 1vh;
-  border-radius: 5px;
+  border-radius: 2px;
   cursor: pointer;
   border: 0;
   margin-bottom: 2vh; }
@@ -38,19 +40,40 @@ button, .submitButton {
 
 .findStore legend {
   width: 100vw;
-  background-color: #aaa;
+  background-color: #ddd;
   color: #000;
   text-align: left;
   padding-left: 2vw;
-  padding: 1vh 0 0 2vw; }
+  padding: 1vh 0 0 2vw;
+  box-shadow: 0px 1px 3px #000; }
 
 .findStore .five-letter {
   text-align: center; }
-  .findStore .five-letter input {
-    margin-bottom: 1vh; }
+  .findStore .five-letter input.fiveLetterInput {
+    margin-bottom: 1vh;
+    width: 3em; }
 
 .findStore .state {
-  display: none; }
+  text-align: center; }
+  .findStore .state input.stateInput {
+    margin-bottom: 1vh;
+    width: 2em; }
 
 .findStore .city-state {
-  display: none; }
+  text-align: center; }
+  .findStore .city-state input.cityInput {
+    margin-bottom: 1vh; }
+  .findStore .city-state input.stateInput {
+    margin-bottom: 1vh;
+    width: 2em; }
+
+.getDirections {
+  text-align: center; }
+
+.info .details {
+  width: 80vw;
+  margin: 0 auto;
+  padding-bottom: 3vh; }
+  .info .details span {
+    margin-left: 2vw;
+    padding: 2vh 0; }

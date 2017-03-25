@@ -8,6 +8,7 @@
   <title>Fastenal Store Finder</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet" href="css/main.css">
+  
 </head>
 <body>
   <header>
@@ -19,33 +20,32 @@
     
     <div class="searchTypeButtons">
       <button class="fiveLtrBtn">5 Letter</button>
-      <button class="StateBtn">State</button>
+      <button class="stateBtn">State</button>
       <button class="cityState">City and State</button>
     </div>
 
     <div class="five-letter card">
       <form class="fiveLetterForm">
-        <legend>Search by 5 letter</legend>
-        <!--<span class="err"> That is not a 5 letter store code</span><br>-->
-        <label for="store">5 Letter: </label>
-        <input type="text" maxlength="5" value='nywod' class="fiveLetterInput"><br>
-        <button id="searchStore" class="submitButton">Submit</button>
-      </form>
+      <legend>Search by 5 letter</legend><br>
+      <label for="store">5 Letter: </label>
+      <input type="text" maxlength="5" value="nywod" class="fiveLetterInput"><br>
+      <input type="button" value="Submit" id="searchStore" class="submitButton">
+    </form>
     </div>
 
     <div class="state card">
       <form class="stateForm">
-        <legend>Search by State (will show all stores in state)</legend>
+        <legend>Search by State (will show all stores in state)</legend><br>
         <label for="state">State:</label>
         <input type="text" maxlength="2" class="stateInput"><br>
-        <button id="searchState" class="submitButton">Submit</button>
+        <input type="button" value="Submit" id="searchStore" class="submitButton">
       </form>
     </div>
 
     <div class="city-state card">
       <form class="cityStateForm">
-        <legend>Search by city and state (will show all stores in state)</legend>
-        <label for="city">City:</label></br>
+        <legend>Search by city and state</legend><br>
+        <label for="city">City:</label>
         <input type="text" class="cityInput"></br>
         <label for="state">State:</label>
         <input type="text" maxlength="2" class="stateInput"><br>
@@ -57,10 +57,10 @@
   <div class="getDirections">
     <h2>Directions</h2>
     <form action="https://maps.google.com/maps" method="get" target="_blank">
-      <label for="saddr">Your location:</label><br>
-      <input type="text" name="saddr" id="userLocation" /><br>
-      <label for="daddr">Destination: </label><br>
-      <input type="text" name="daddr" id="dest" /><br>
+      <label for="saddr">Your location:</label>
+      <input type="text" name="saddr" id="userLocation" /><br><br>
+      <label for="daddr">Destination: </label>
+      <input type="text" name="daddr" id="dest" /><br><br>
       <input type="submit" value="Use Google Maps" class="submitButton"/>
       <a href="#" class="waze submitButton">Waze</a>
     </form>
@@ -70,10 +70,10 @@
    <div class="info">
      <h2>Information</h2>
      <div class="details">
-      <span class="big">Address:</span> <br> <span id="addr"></span><br><br>
-      <span class="big">Phone:</span> <span id="phone"></span><br><br>
-      <span class="big"> Fax:</span> <span id="fax"></span></a><br><br>
-      <span class="big"> Email:</span> <span id="email"></span>
+      <span>Address:</span> <br> <span id="addr"></span><br><br>
+      <span>Phone:</span> <span id="phone"></span><br><br>
+      <span>Fax:</span> <span id="fax"></span><br><br>
+      <span>Email:</span> <span id="email"></span>
      </div>
    </div>
 
@@ -82,5 +82,6 @@
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
    <script src="js/test.js"></script>
+   <script src="js/ui.js"></script>
 </body>
 </html>
